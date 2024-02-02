@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.add {
+    height: 90%;
+    width: 100%;
+    /* border: 5px solid green; */
+    position: relative;
+}
+
+.add_btn {
+    height: 8vh;
+    width: 4vw;
+    border-radius: 50%;
+    background: rgba(22, 0, 139, 1);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none;
+    position: sticky;
+    top: 90vh;
+    left: 20vw;
+}
