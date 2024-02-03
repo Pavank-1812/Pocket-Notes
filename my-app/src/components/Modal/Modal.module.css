@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* Code for popup*/
+
+.popup {
+    height: 33vh;
+    width: 28vw;
+    /* border: 2px solid black; */
+    position: absolute;
+    z-index: 10;
+    top:30%;
+    left: 40%;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.popup p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.input_div {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+.input_div p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;   
+}
+.input {
+    height: 4vh;
+    width: 16vw;
+    padding-left: 15px;
+    padding-top: 2px;
+    outline: none;
+    border: 2px solid rgba(204, 204, 204, 1);
+    border-radius: 18px;
+}
+
+.color_div {
+    display: flex;
+    gap: 20px; 
+}
+
+.color_div p {
+    margin-top: 4px;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.choice_div{
+    /* border: 2px solid black; */
+    height: 6vh;
+    width: 12vw;
+    display: flex;
+    gap: 4px;
+}
+
+.choice {
+    height: 4vh;
+    width: 2vw;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#choice1 {
+    background: rgba(179, 139, 250, 1);
+}
+#choice2 {
+    background: rgba(255, 121, 242, 1);
+}
+#choice3 {
+    background: rgba(67, 230, 252, 1);
+}
+#choice4 {
+    background: rgba(241, 149, 118, 1);
+}
+#choice5 {
+    background: rgba(0, 71, 255, 1);
+}
+#choice6 {
+    background: rgba(102, 145, 255, 1);
+}
+
+/*create button css*/
+.create_btn {
+    height: 4vh;
+    width: 7vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 31, 139, 1);
+    margin-left: 280px;
+    border-radius: 9px;
+    padding: 4px;
+}
