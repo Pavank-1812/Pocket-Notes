@@ -3,12 +3,13 @@ import styles from '../../components/Modal/Modal.module.css';
 
 const Modal = () => {
     return (
-        <div className={styles.popup}>
-            <p>Create  New Group</p>
-            <div className={styles.input_div}>
-                <p>Group Name</p>
-                <input className={styles.input} type='text' placeholder='Enter group name'></input>
-            </div>
+        <>
+            <div className={styles.popup}>
+                <p>Create  New Group</p>
+                <div className={styles.input_div}>
+                    <p>Group Name</p>
+                    <input className={styles.input} type='text' placeholder='Enter group name'></input>
+                </div>
                 <div className={styles.color_div}>
                     <p>Choose Color</p>
                     <div className={styles.choice_div}>
@@ -21,7 +22,8 @@ const Modal = () => {
                     </div>
                 </div>
                 <button className={styles.create_btn}>Create</button>
-        </div>
+            </div>
+        </>
     )
 }
 
