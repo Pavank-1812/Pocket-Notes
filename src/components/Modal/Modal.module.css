@@ -7,18 +7,6 @@
 }
 
 /* Code for popup*/
-
-
-.blur {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9; /* Make sure it is above other elements */
-}
-
 .popup {
     height: 33vh;
     width: 28vw;
@@ -105,6 +93,16 @@
 }
 #choice6 {
     background: rgba(102, 145, 255, 1);
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(47, 47, 47, 0.75);
+    z-index: 9; /* Make sure it is above other elements, but not popup */
 }
 
 /*create button css*/
