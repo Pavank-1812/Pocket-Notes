@@ -79,20 +79,38 @@
 #choice1 {
     background: rgba(179, 139, 250, 1);
 }
+#choice1:hover {
+    border: 3px solid black;
+}
 #choice2 {
     background: rgba(255, 121, 242, 1);
+}
+#choice2:hover {
+    border: 3px solid black;
 }
 #choice3 {
     background: rgba(67, 230, 252, 1);
 }
+#choice3:hover {
+    border: 3px solid black;
+}
 #choice4 {
     background: rgba(241, 149, 118, 1);
+}
+#choice4:hover {
+    border: 3px solid black;
 }
 #choice5 {
     background: rgba(0, 71, 255, 1);
 }
+#choice5:hover {
+    border: 3px solid black;
+}
 #choice6 {
     background: rgba(102, 145, 255, 1);
+}
+#choice6:hover {
+    border: 3px solid black;
 }
 
 .blur {
