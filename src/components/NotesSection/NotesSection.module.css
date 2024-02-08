@@ -1,9 +1,40 @@
 .main {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     height: 100%;
     width: 100%;
     position: relative;
+    background: rgba(218, 229, 245, 1);
     z-index: 10;
+}
+
+.header {
+    border: 2px solid violet;
+    height: 10vh;
+    width: 100%;
+    background: rgba(0, 31, 139, 1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+    gap: 20px;
+}
+
+.icon {
+    /* border: 2px solid green; */
+    height: 7vh;
+    width:3.5vw;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: #0047ff;
+}
+
+.group_name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 .textarea {

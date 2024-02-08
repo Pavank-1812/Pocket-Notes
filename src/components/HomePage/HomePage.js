@@ -3,7 +3,7 @@ import styles from '../../components/HomePage/HomePage.module.css';
 import lock from '../../assets/lock.png';
 import home from '../../assets/home-img.png';
 import GenerateNotes from '../../components/GenerateNotes/GenerateNotes.js'
-import NotesSection from '../../components/NotesSection/NotesSection.js'
+// import NotesSection from '../../components/NotesSection/NotesSection.js'
 
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
                 </div>
 
                 <div className={styles.right}>
-                    <NotesSection />
+                    {/* <NotesSection /> */}
                     <div className={styles.main}>
                         <img className={styles.home} alt='home' src={home}></img>
                         <h1>Pocket Notes</h1>
