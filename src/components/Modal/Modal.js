@@ -4,7 +4,6 @@ import styles from '../../components/Modal/Modal.module.css';
 const Modal = () => {
     return (
         <>
-            <div className={styles.blur}></div>
             <div className={styles.popup}>
                 <p>Create  New Group</p>
                 <div className={styles.input_div}>

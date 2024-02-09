@@ -1,13 +1,30 @@
-import React from 'react';
-import home_styles from '../../components/HomePage/HomePage.module.css';
 import lock from '../../assets/lock.png';
 import home from '../../assets/home-img.png';
-import GenerateNotes from '../../components/GenerateNotes/GenerateNotes.js'
+import React from 'react';
+import { useState } from 'react';
+import Modal from '../../components/Modal/Modal.js';
+import home_styles from '../../components/HomePage/HomePage.module.css';
 import Notes from './NotesSection.module.css'
-
+import btn_styles from '../../components/GenerateNotes/GenerateNotes.module.css';
 
 
 export default function HomePage() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    const handleBlurClick = (event) => {
+        // Check if the clicked element has the blur class
+        if (event.target.classList.contains(home_styles.blur)) {
+            closeModal(); // Close the modal
+        }
+    };
     return (
         <>
             <div className={home_styles.container}>
@@ -17,25 +34,18 @@ export default function HomePage() {
                         <div className={Notes.icon}>MN</div>
                         <div className={Notes.group_name}><h3>My Notes</h3></div>
                     </div>
-                    <GenerateNotes />
+
+                    <div className={btn_styles.add}>
+                        <button className={btn_styles.add_btn} onClick={openModal}>
+                            +
+                        </button>
+                    </div>
+                    {isModalOpen && <div onClick={handleBlurClick} className={home_styles.blur}><Modal onClose={closeModal} /></div>}
                 </div>
 
                 <div className={home_styles.right}>
 
-                    {/* NotesSection - Start*/}
 
-                    {/* <div className={Notes.main}>
-                        <div className={Notes.header}>
-                            <div className={Notes.icon}>MN</div>
-                            <div className={Notes.group_name}>My Notes</div>
-
-                        </div>
-                        <div className={Notes.outer}>
-                            <textarea className={Notes.textarea}></textarea>
-                        </div>
-                    </div> */}
-
-                    {/* notes section - end */}
 
                     <div className={home_styles.main}>
                         <img className={home_styles.home} alt='home' src={home}></img>
@@ -47,6 +57,17 @@ export default function HomePage() {
                         <img className={home_styles.lock} alt='lock' src={lock}></img>
                         <p>end-to-end encrypted</p>
                     </div>
+
+                    {/* <div className={Notes.main}>
+                        <div className={Notes.header}>
+                            <div className={Notes.icon}>MN</div>
+                            <div className={Notes.group_name}>My Notes</div>
+
+                        </div>
+                        <div className={Notes.outer}>
+                            <textarea className={Notes.textarea}></textarea>
+                        </div>
+                    </div> */}
                 </div>
             </div>
         </>
