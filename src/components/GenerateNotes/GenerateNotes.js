@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '../../components/GenerateNotes/GenerateNotes.module.css';
+import btn_styles from '../../components/GenerateNotes/GenerateNotes.module.css';
 import Modal from '../../components/Modal/Modal.js';
 
 function GenerateNotes() {
@@ -11,8 +11,8 @@ function GenerateNotes() {
 
     return (
         <>
-            <div className={styles.add}>
-                <button className={styles.add_btn} onClick={openModal}>
+            <div className={btn_styles.add}>
+                <button className={btn_styles.add_btn} onClick={openModal}>
                     +
                 </button>
             </div>

@@ -1,14 +1,14 @@
 .main {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100%;
     width: 100%;
     position: relative;
     background: rgba(218, 229, 245, 1);
-    z-index: 10;
+    z-index: 8;
 }
 
 .header {
-    border: 2px solid violet;
+    /* border: 2px solid violet; */
     height: 10vh;
     width: 100%;
     background: rgba(0, 31, 139, 1);
@@ -26,10 +26,13 @@
     width:3.5vw;
     border-radius: 50%;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: #0047ff;
+    color: #ffffff;
+    font-size: 1.3rem;
+
 }
 
 .group_name {
@@ -47,6 +50,7 @@
     left: 45px;
     outline: none;
     border: none;
+    resize: none;
 }
 
 .outer {

@@ -21,6 +21,9 @@
     /* border: 2px solid red; */
     background-color: #ffffff;
     /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
@@ -97,3 +100,18 @@
 
 
 }
+
+/* grouplist css start */
+.group_list {
+    width: 100%;
+    height: 12vh;
+    background: rgba(47, 47, 47, 0.17);
+    border-radius: 12px;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    padding-left: 35px;
+}
+/* css for grouplist end */
